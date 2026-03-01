@@ -27,8 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev-only-secret")
 DEBUG = os.getenv("DEBUG", "1") == "1"
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-CREATE_ADMIN_TOKEN = os.getenv("CREATE_ADMIN_TOKEN", "")
-BOOTSTRAP_ADMIN_PASSWORD = os.getenv("BOOTSTRAP_ADMIN_PASSWORD", "")
+
 
 # Application definition
 
