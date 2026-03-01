@@ -11,4 +11,5 @@ urlpatterns = [
     path("api/", include("discovery.urls")),
     path("", home),
     path("api/auth/", include("accounts.urls")),
+    
 ]
