@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.http import JsonResponse
+from accounts.admin_bootstrap import bootstrap_admin
 
 def home(request):
     return JsonResponse({"message": "UVO AI Backend is running 🚀"})
@@ -11,5 +12,5 @@ urlpatterns = [
     path("api/", include("discovery.urls")),
     path("", home),
     path("api/auth/", include("accounts.urls")),
-    
+    path("bootstrap-admin/", bootstrap_admin),
 ]
